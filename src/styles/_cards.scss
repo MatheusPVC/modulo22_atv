@@ -1,5 +1,7 @@
+@use 'variables';
+
 .cards {
-    background-image: linear-gradient(180deg, purple, red);
+    background-image: linear-gradient(180deg, variables.$gradientColor, variables.$gradientSecondaryColor);
     &__list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
@@ -33,8 +35,8 @@
 
             &__title {
                 padding: 8px;
-                color: #212529;
-                background-color: white;
+                color: variables.$cardTextColor;
+                background-color: variables.$textColor;
             }
 
             &__img {
@@ -47,8 +49,8 @@
             }
 
             &__text {
-                color: #212529;
-                background-color: white;
+                color: variables.$cardTextColor;
+                background-color: variables.$textColor;
                 padding: 0px 8px 8px 8px;
                 height: 200px;
                 
